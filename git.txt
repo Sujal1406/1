@@ -1,0 +1,28 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=<form>, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Event handling</h1>
+        
+            <label>State</label>
+            <input  type="text"  id="text01" onchange="textonchange()" placeholder="State name"><br>
+            
+            <label>State</label>
+            <input  type="text"  id="text02" onchange="textonchange()" placeholder="capital is ">
+            <p id="display"></p>
+            <p id="display1"></p>
+            <script>
+                function textonchange(){ 
+                    var myEntry=document.getElementById("text01").value;
+                    document.getElementById('display').innerHTML="I am from "+myEntry;
+                    var myEntry=document.getElementById("text02").value;
+                    document.getElementById('display1').innerHTML="capital is    "+myEntry;
+                }
+            </script>
+        
+    </body>
+    </html>
